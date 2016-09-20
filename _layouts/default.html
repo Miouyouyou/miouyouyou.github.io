@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{site.description}}" />
+    {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags }}" />
+    {% endif %}
+    <link rel="stylesheet" href="/css/reset.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/custom-structure.css"/>
+    <link rel="stylesheet" href="/css/{{ page.theme }}-theme.css"/>
+    
+    {% if layout.highlighter_theme %}
+    <link rel="stylesheet" href="/css/hsp-themes/{{ layout.highlighter_theme }}.css"/>
+    <script type="text/javascript" src="/js/hsp.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    {% endif %}
+
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <header>
+      <navbar>
+        <div><a href="/">Main page</a></div>
+      </navbar>
+      <h1>{{ site.title }}</h1>
+    </header>
+    <main>{{ content }}</main>
+  </body>
+</html>

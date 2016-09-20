@@ -1,0 +1,9 @@
+ol { list-style-type: decimal; }
+ul { list-style-type: disc; }
+li { display: list-item; }
+article > title, example, example > title, programlisting, demonstration, content { display: block; }
+command { display: inline-block; }
+programlisting[language="shell"] command::before { content: "$ "; }
+filename, path, replaceable, register, symbol, ellipsis, class, category { display: inline; }
+programlisting, symbol, code { white-space : pre; }
+ellipsis::before { content: "…"; }

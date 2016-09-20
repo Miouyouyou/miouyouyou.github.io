@@ -1,0 +1,24 @@
+
+body > header { background-color: rgb(162, 0, 37); }
+article { margin-left: 1em; }
+article > header > h1 { font-size: 250%; color: darkred; }
+section > h1 { font-size: 175%; }
+section > section > h1 { font-size: 115%; } 
+filename, var, path, register { font-weight: bold; }
+p { margin-top: 0.5em; margin-bottom: 0.5em; line-height: 1.25em; }
+li { margin-left: 20px; }
+programlisting, symbol, code { font-family: "Terminal", "Monaco", monospace; }
+programlisting { font-size: 90%; }
+demonstration { padding:1em; background-color: #eee; }
+replaceable { color: gray; }
+example > legend { margin: 1em; }
+output { white-space: pre; background-color: lightgray; display: block; }
+list { display: block; }
+list item { display: list-item; margin: 0.5em 1em; }
+command::before { content: "$ "; }
+table th { padding: 1em; font-weight: bold; border-bottom: 1px dotted gray; }
+table td { padding: 0.5em 1em; }
+table { border: 1px solid gray; }
+table tr:nth-child(even) { background-color: #eee; }
+note[type="important"] { display: inline-block; border: 1px solid #e50; color: #e50; padding: 0.5em; max-width: 50%; border-radius: 5px; }
+note[type="important"]::before { content: "⚠"; margin-right: 0.30em;  }

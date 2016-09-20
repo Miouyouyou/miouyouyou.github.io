@@ -1,0 +1,24 @@
+---
+layout: default
+theme: main
+title: Myy's library
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Documentations</h1>
+
+  <ul class="post-list">
+    {% for document in site.documents %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ document.url | prepend: site.baseurl }}">{{ document.title | escape }}</a>
+        </h2>
+        {% if document.tags %}<tags>{{ document.tags | join: " " }}</tags>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
